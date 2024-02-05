@@ -30,6 +30,7 @@
 		3BB056802B710590000A1E1D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB0567F2B710590000A1E1D /* SnapKit */; };
 		3BB056832B71063C000A1E1D /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB056822B71063C000A1E1D /* Differentiator */; };
 		3BB056852B71063C000A1E1D /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB056842B71063C000A1E1D /* RxDataSources */; };
+		3BB056872B7106DB000A1E1D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB056862B7106DB000A1E1D /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		3BB056692B710452000A1E1D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		3BB0566A2B710452000A1E1D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		3BB056792B710485000A1E1D /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
+		3BB056862B7106DB000A1E1D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3BB0564F2B70FFAF000A1E1D /* Assets.xcassets */,
 				3BB056512B70FFAF000A1E1D /* LaunchScreen.storyboard */,
 				3BB056542B70FFAF000A1E1D /* Info.plist */,
+				3BB056862B7106DB000A1E1D /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				3BB0564E2B70FFAE000A1E1D /* ViewController.swift in Sources */,
 				3BB0564A2B70FFAE000A1E1D /* AppDelegate.swift in Sources */,
 				3BB0564C2B70FFAE000A1E1D /* SceneDelegate.swift in Sources */,
+				3BB056872B7106DB000A1E1D /* AppColors.swift in Sources */,
 				3BB0567A2B710485000A1E1D /* UIFont+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
