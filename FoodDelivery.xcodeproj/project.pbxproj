@@ -26,6 +26,10 @@
 		3BB056762B710452000A1E1D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BB056692B710452000A1E1D /* Roboto-Thin.ttf */; };
 		3BB056772B710452000A1E1D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BB0566A2B710452000A1E1D /* Roboto-Black.ttf */; };
 		3BB0567A2B710485000A1E1D /* UIFont+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB056792B710485000A1E1D /* UIFont+Extention.swift */; };
+		3BB0567D2B710582000A1E1D /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB0567C2B710582000A1E1D /* RxAlamofire */; };
+		3BB056802B710590000A1E1D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB0567F2B710590000A1E1D /* SnapKit */; };
+		3BB056832B71063C000A1E1D /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB056822B71063C000A1E1D /* Differentiator */; };
+		3BB056852B71063C000A1E1D /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB056842B71063C000A1E1D /* RxDataSources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB0567D2B710582000A1E1D /* RxAlamofire in Frameworks */,
+				3BB056852B71063C000A1E1D /* RxDataSources in Frameworks */,
+				3BB056832B71063C000A1E1D /* Differentiator in Frameworks */,
+				3BB056802B710590000A1E1D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +170,12 @@
 			dependencies = (
 			);
 			name = FoodDelivery;
+			packageProductDependencies = (
+				3BB0567C2B710582000A1E1D /* RxAlamofire */,
+				3BB0567F2B710590000A1E1D /* SnapKit */,
+				3BB056822B71063C000A1E1D /* Differentiator */,
+				3BB056842B71063C000A1E1D /* RxDataSources */,
+			);
 			productName = FoodDelivery;
 			productReference = 3BB056462B70FFAE000A1E1D /* FoodDelivery.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +204,11 @@
 				Base,
 			);
 			mainGroup = 3BB0563D2B70FFAE000A1E1D;
+			packageReferences = (
+				3BB0567B2B710582000A1E1D /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				3BB0567E2B710590000A1E1D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3BB056812B71063C000A1E1D /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
 			productRefGroup = 3BB056472B70FFAE000A1E1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -445,6 +464,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BB0567B2B710582000A1E1D /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.1;
+			};
+		};
+		3BB0567E2B710590000A1E1D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+		3BB056812B71063C000A1E1D /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BB0567C2B710582000A1E1D /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BB0567B2B710582000A1E1D /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		3BB0567F2B710590000A1E1D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BB0567E2B710590000A1E1D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3BB056822B71063C000A1E1D /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BB056812B71063C000A1E1D /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		3BB056842B71063C000A1E1D /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BB056812B71063C000A1E1D /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BB0563E2B70FFAE000A1E1D /* Project object */;
 }
