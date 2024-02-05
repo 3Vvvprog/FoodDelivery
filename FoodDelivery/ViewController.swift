@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .systemRed
+        view.backgroundColor = AppColors.lightGray
         
         let label = UILabel()
         label.text = "Hello world!"
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         }
         
         label.font = .Roboto.thin.size(of: 40)
-        label.textColor = .white
+        label.textColor = AppColors.accentOrange
     }
 
 
