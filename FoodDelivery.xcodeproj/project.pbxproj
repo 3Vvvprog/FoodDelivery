@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B517EB92B71254400876B1E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EB82B71254400876B1E /* AppCoordinator.swift */; };
+		3B517EBB2B71262200876B1E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */; };
+		3B517EBD2B7169FF00876B1E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */; };
+		3B517EBF2B716A4200876B1E /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBE2B716A4200876B1E /* OrderCoordinator.swift */; };
+		3B517EC72B720FDE00876B1E /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EC62B720FDE00876B1E /* ListCoordinator.swift */; };
+		3B517EC92B72101300876B1E /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EC82B72101300876B1E /* ProfileCoordinator.swift */; };
+		3B517ECB2B72106600876B1E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517ECA2B72106600876B1E /* TabBarController.swift */; };
 		3BB0564A2B70FFAE000A1E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB056492B70FFAE000A1E1D /* AppDelegate.swift */; };
 		3BB0564C2B70FFAE000A1E1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0564B2B70FFAE000A1E1D /* SceneDelegate.swift */; };
 		3BB0564E2B70FFAE000A1E1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0564D2B70FFAE000A1E1D /* ViewController.swift */; };
@@ -35,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B517EB82B71254400876B1E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		3B517EBE2B716A4200876B1E /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		3B517EC62B720FDE00876B1E /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		3B517EC82B72101300876B1E /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		3B517ECA2B72106600876B1E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3BB056462B70FFAE000A1E1D /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB056492B70FFAE000A1E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB0564B2B70FFAE000A1E1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +187,12 @@
 			isa = PBXGroup;
 			children = (
 				3BB0568B2B710CFB000A1E1D /* Coordinator.swift */,
+				3B517EB82B71254400876B1E /* AppCoordinator.swift */,
+				3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */,
+				3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */,
+				3B517EBE2B716A4200876B1E /* OrderCoordinator.swift */,
+				3B517EC62B720FDE00876B1E /* ListCoordinator.swift */,
+				3B517EC82B72101300876B1E /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -180,6 +200,7 @@
 		3BB0568A2B710CE3000A1E1D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3B517ECA2B72106600876B1E /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,11 +300,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB0564E2B70FFAE000A1E1D /* ViewController.swift in Sources */,
+				3B517ECB2B72106600876B1E /* TabBarController.swift in Sources */,
+				3B517EBF2B716A4200876B1E /* OrderCoordinator.swift in Sources */,
 				3BB0564A2B70FFAE000A1E1D /* AppDelegate.swift in Sources */,
+				3B517EBD2B7169FF00876B1E /* HomeCoordinator.swift in Sources */,
+				3B517EC92B72101300876B1E /* ProfileCoordinator.swift in Sources */,
 				3BB0568C2B710CFB000A1E1D /* Coordinator.swift in Sources */,
 				3BB0564C2B70FFAE000A1E1D /* SceneDelegate.swift in Sources */,
 				3BB056872B7106DB000A1E1D /* AppColors.swift in Sources */,
+				3B517EC72B720FDE00876B1E /* ListCoordinator.swift in Sources */,
+				3B517EBB2B71262200876B1E /* OnboardingCoordinator.swift in Sources */,
 				3BB0567A2B710485000A1E1D /* UIFont+Extention.swift in Sources */,
+				3B517EB92B71254400876B1E /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
