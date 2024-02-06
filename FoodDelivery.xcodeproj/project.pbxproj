@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B20EDF52B722E7F00630746 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EDF42B722E7F00630746 /* OnboardingViewPresenter.swift */; };
+		3B20EDF82B722EBD00630746 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EDF62B722EBD00630746 /* OnboardingViewController.swift */; };
+		3B20EDF92B722EBD00630746 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EDF72B722EBD00630746 /* OnboardingViewModel.swift */; };
 		3B517EB92B71254400876B1E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EB82B71254400876B1E /* AppCoordinator.swift */; };
 		3B517EBB2B71262200876B1E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */; };
 		3B517EBD2B7169FF00876B1E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B20EDF42B722E7F00630746 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		3B20EDF62B722EBD00630746 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		3B20EDF72B722EBD00630746 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		3B517EB82B71254400876B1E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -89,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B20EDF02B722DCE00630746 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3B20EDF12B722E4F00630746 /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3B20EDF12B722E4F00630746 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3B20EDF42B722E7F00630746 /* OnboardingViewPresenter.swift */,
+				3B20EDF62B722EBD00630746 /* OnboardingViewController.swift */,
+				3B20EDF72B722EBD00630746 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		3BB0563D2B70FFAE000A1E1D = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +132,7 @@
 		3BB056482B70FFAE000A1E1D /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				3B20EDF02B722DCE00630746 /* Modules */,
 				3BB056882B710CB9000A1E1D /* NavigationLayer */,
 				3BB0565B2B7100DA000A1E1D /* Application */,
 				3BB0564D2B70FFAE000A1E1D /* ViewController.swift */,
@@ -301,10 +326,13 @@
 			files = (
 				3BB0564E2B70FFAE000A1E1D /* ViewController.swift in Sources */,
 				3B517ECB2B72106600876B1E /* TabBarController.swift in Sources */,
+				3B20EDF52B722E7F00630746 /* OnboardingViewPresenter.swift in Sources */,
+				3B20EDF92B722EBD00630746 /* OnboardingViewModel.swift in Sources */,
 				3B517EBF2B716A4200876B1E /* OrderCoordinator.swift in Sources */,
 				3BB0564A2B70FFAE000A1E1D /* AppDelegate.swift in Sources */,
 				3B517EBD2B7169FF00876B1E /* HomeCoordinator.swift in Sources */,
 				3B517EC92B72101300876B1E /* ProfileCoordinator.swift in Sources */,
+				3B20EDF82B722EBD00630746 /* OnboardingViewController.swift in Sources */,
 				3BB0568C2B710CFB000A1E1D /* Coordinator.swift in Sources */,
 				3BB0564C2B70FFAE000A1E1D /* SceneDelegate.swift in Sources */,
 				3BB056872B7106DB000A1E1D /* AppColors.swift in Sources */,
