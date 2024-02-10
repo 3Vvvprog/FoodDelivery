@@ -10,6 +10,7 @@
 		3B20EDF52B722E7F00630746 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EDF42B722E7F00630746 /* OnboardingViewPresenter.swift */; };
 		3B20EDF82B722EBD00630746 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EDF62B722EBD00630746 /* OnboardingViewController.swift */; };
 		3B20EDFC2B726E6900630746 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EDFA2B726E6900630746 /* OnboardingPartViewController.swift */; };
+		3B282B042B7781160012CE8F /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B282B032B7781160012CE8F /* UserStorage.swift */; };
 		3B517EB92B71254400876B1E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EB82B71254400876B1E /* AppCoordinator.swift */; };
 		3B517EBB2B71262200876B1E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */; };
 		3B517EBD2B7169FF00876B1E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */; };
@@ -48,6 +49,7 @@
 		3B20EDF42B722E7F00630746 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		3B20EDF62B722EBD00630746 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3B20EDFA2B726E6900630746 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
+		3B282B032B7781160012CE8F /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		3B517EB82B71254400876B1E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3B517EBA2B71262200876B1E /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		3B517EBC2B7169FF00876B1E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		3B282B002B7780D90012CE8F /* ServicesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B282B032B7781160012CE8F /* UserStorage.swift */,
+			);
+			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
 		3BB0563D2B70FFAE000A1E1D = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		3BB056482B70FFAE000A1E1D /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				3B282B002B7780D90012CE8F /* ServicesLayer */,
 				3B20EDF02B722DCE00630746 /* Modules */,
 				3BB056882B710CB9000A1E1D /* NavigationLayer */,
 				3BB0565B2B7100DA000A1E1D /* Application */,
@@ -334,6 +345,7 @@
 				3B20EDF82B722EBD00630746 /* OnboardingViewController.swift in Sources */,
 				3BB0568C2B710CFB000A1E1D /* Coordinator.swift in Sources */,
 				3BB0564C2B70FFAE000A1E1D /* SceneDelegate.swift in Sources */,
+				3B282B042B7781160012CE8F /* UserStorage.swift in Sources */,
 				3BB056872B7106DB000A1E1D /* AppColors.swift in Sources */,
 				3B517EC72B720FDE00876B1E /* ListCoordinator.swift in Sources */,
 				3B20EDFC2B726E6900630746 /* OnboardingPartViewController.swift in Sources */,
