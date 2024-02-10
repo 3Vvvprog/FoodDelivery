@@ -10,7 +10,6 @@ import UIKit
 import SnapKit
 
 class OnboardingViewController: UIViewController {
-    var viewModel: OnboardingViewModel!
 //    private var disposeBag = DisposeBag()
     
     // MARK: - Private Properties
@@ -20,7 +19,7 @@ class OnboardingViewController: UIViewController {
     // MARK: - Private Views
     private let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     private let pageControl = UIPageControl()
-    weak var viewOutput: OnboardingViewOutput!
+    var viewOutput: OnboardingViewOutput!
     
     init(pages: [UIViewController] = [UIViewController](), viewOutput: OnboardingViewOutput!) {
         self.viewOutput = viewOutput
@@ -34,12 +33,10 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = OnboardingViewModel()
         initialize()
         setupPageControl()
         makeConstraints()
-        
-        
+        view.backgroundColor = AppColors.accentOrange
     }
     
     
@@ -68,6 +65,7 @@ private extension OnboardingViewController {
     func setupPageControl() {
         pageControl.numberOfPages = pages.count
         pageControl.currentPage = 0
+        pageControl.isUserInteractionEnabled = false
         view.addSubview(pageControl)
         pageControl.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -87,12 +85,15 @@ private extension OnboardingViewController {
 extension OnboardingViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        guard let currentIndex = pages.firstIndex(of: viewController), currentIndex > 0 else { return UIViewController()}
+        guard let currentIndex = pages.firstIndex(of: viewController), currentIndex > 0 else { return nil}
+        if pages[currentIndex - 1] == pages.last! { return nil }
         return pages[currentIndex - 1]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let currentIndex = pages.firstIndex(of: viewController), currentIndex < pages.count - 1 else { return UIViewController()}
+        guard let currentIndex = pages.firstIndex(of: viewController), currentIndex < pages.count - 1 else { 
+            viewOutput.onboardingFinish()
+            return nil }
         return pages[currentIndex + 1]
     }
     
