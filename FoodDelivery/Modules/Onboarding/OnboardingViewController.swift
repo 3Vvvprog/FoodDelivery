@@ -14,6 +14,7 @@ class OnboardingViewController: UIViewController {
     
     // MARK: - Private Properties
     private var pages = [UIViewController]()
+    private var currentPageIndex = 0
     
     
     // MARK: - Private Views
@@ -104,7 +105,13 @@ extension OnboardingViewController: UIPageViewControllerDataSource {
 extension OnboardingViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         if let index = pages.firstIndex(of: pendingViewControllers.first!) {
-            pageControl.currentPage = index
+            currentPageIndex = index
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            pageControl.currentPage = currentPageIndex
         }
     }
 }
