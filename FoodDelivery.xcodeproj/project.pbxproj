@@ -18,6 +18,7 @@
 		3B517EC72B720FDE00876B1E /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EC62B720FDE00876B1E /* ListCoordinator.swift */; };
 		3B517EC92B72101300876B1E /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517EC82B72101300876B1E /* ProfileCoordinator.swift */; };
 		3B517ECB2B72106600876B1E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517ECA2B72106600876B1E /* TabBarController.swift */; };
+		3B7391052B78AE5B00C5EF9D /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7391042B78AE5B00C5EF9D /* SceneFactory.swift */; };
 		3BB0564A2B70FFAE000A1E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB056492B70FFAE000A1E1D /* AppDelegate.swift */; };
 		3BB0564C2B70FFAE000A1E1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0564B2B70FFAE000A1E1D /* SceneDelegate.swift */; };
 		3BB0564E2B70FFAE000A1E1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0564D2B70FFAE000A1E1D /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		3B517EC62B720FDE00876B1E /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		3B517EC82B72101300876B1E /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		3B517ECA2B72106600876B1E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3B7391042B78AE5B00C5EF9D /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		3BB056462B70FFAE000A1E1D /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB056492B70FFAE000A1E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB0564B2B70FFAE000A1E1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		3B20EDF02B722DCE00630746 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3B7391032B78AE4400C5EF9D /* SceneFactory */,
 				3B20EDF12B722E4F00630746 /* Onboarding */,
 			);
 			path = Modules;
@@ -121,6 +124,14 @@
 				3B282B032B7781160012CE8F /* UserStorage.swift */,
 			);
 			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
+		3B7391032B78AE4400C5EF9D /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				3B7391042B78AE5B00C5EF9D /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
 			sourceTree = "<group>";
 		};
 		3BB0563D2B70FFAE000A1E1D = {
@@ -348,6 +359,7 @@
 				3B282B042B7781160012CE8F /* UserStorage.swift in Sources */,
 				3BB056872B7106DB000A1E1D /* AppColors.swift in Sources */,
 				3B517EC72B720FDE00876B1E /* ListCoordinator.swift in Sources */,
+				3B7391052B78AE5B00C5EF9D /* SceneFactory.swift in Sources */,
 				3B20EDFC2B726E6900630746 /* OnboardingPartViewController.swift in Sources */,
 				3B517EBB2B71262200876B1E /* OnboardingCoordinator.swift in Sources */,
 				3BB0567A2B710485000A1E1D /* UIFont+Extention.swift in Sources */,
